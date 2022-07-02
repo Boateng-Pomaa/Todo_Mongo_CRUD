@@ -1,0 +1,32 @@
+//getting all todos
+GET  http://localhost:3000/todos HTTP/1.1
+
+###
+// creating a new todo
+POST http://localhost:3000/todos HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "RESUME",
+    "description": "Leave for school",
+    "timestamps": "2022-2-2"
+}
+
+###
+// getting a single todo
+GET http://localhost:3000/todos/ HTTP/1.1
+
+###
+// updating a todo
+PUT http://localhost:3000/todos/ HTTP/1.1
+Content-Length: application/json
+
+{
+    "title": "OUTING",
+    "description": "Going out with friends"
+    
+}
+
+###
+// deleting a todo
+DELETE http://localhost:3000/todos/62bdb17851d0f3b7c304372c HTTP/1.1
